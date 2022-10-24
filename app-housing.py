@@ -41,11 +41,11 @@ else:
     df = df[df.median_income > 4.5]
 
 # show data on map
-
+st.subheader('See more filters in the sidebar:')
 st.map(df)
 
 # show median house value by index
-
+st.subheader('Histogram of the Median House Value')
 fig, ax =  plt.subplots()
 median_house_price = df.median_house_value
 median_house_price.hist(ax=ax, bins=30)
