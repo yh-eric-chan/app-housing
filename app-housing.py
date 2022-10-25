@@ -23,7 +23,7 @@ income_filter = st.sidebar.radio(
 
 # filter by house price
 
-df = df[df.median_house_value <= house_price_filter]
+df = df[df.median_house_value >= house_price_filter]
 
 # filter by location
 
